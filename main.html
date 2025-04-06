@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="main_style.css">
+
+  <!--
+    - google font link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="theme-toggle-wrapper">
+    <div id="theme-toggle">
+      <div class="toggle-option" data-theme="light-theme">🌞</div>
+      <div class="toggle-option" data-theme="dark-theme">🌙</div>
+    </div>
+  </div>
+  
+  
+
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="photo1.png" alt="Afsana" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Afsana Ali Mullick">Afsana Ali Mullick</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:afsnamullick41@gmail.com" class="contact-link">afsanamullick41@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel: 8617220650" class="contact-link">+91 8617220650</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-04-20">April 20,2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>India , Kolkata , West bengal</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/afsana-ali-mullick-746075255/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>project</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I'm Afsana Ali Mullick, a passionate and ambitious BCA student at iLEAD, Kolkata. I thrive at the intersection of technology and management, constantly exploring how innovative solutions can drive meaningful change in our digital world.
+
+With hands-on experience from internships and hackathons, I've built projects like a Health Assistance Chatbot using Python and a Security Enhancement Program for application security.
+          </p>
+
+          <p>
+            I'm skilled in Python, C, MySQL, and frontend development, and have also honed my soft skills through presentations and teamwork.
+
+            I'm not just about coding—I’m also a bronze medalist in Karate, a runner-up in multiple coding competitions, and someone who loves turning ideas into impactful digital experiences.
+            
+            Let’s create something great together.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://img.freepik.com/premium-vector/web-design-logo-vector-templet_1070930-291.jpg" alt="design icon" height="60">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkdxxNvX0UDxKRBuRe9U7UrwkonpRLGz0nuA&s" alt="Web development icon"  height="70">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="data:image/jpeg;base64,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" alt="mobile app icon" width="100">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Photographer_Photographing_Nevada_Mountains.jpg/800px-Photographer_Photographing_Nevada_Mountains.jpg" alt="camera icon" height="80">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://i.seadn.io/gae/_fy_SHzXyxgbeFfFyqZ8JpQ48a_w4Wl50b8FSPjNW7wV8FzYp_Ag3S6DdcZfFlSeg78_QfgVcZ3vSL4_nJbQEthOfQWPHjYv0gOpyA?auto=format&dpr=1&w=1000" alt="Teammate, SIH Internal Hackathon 2024" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Teammate, SIH Internal Hackathon 2024</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    She brings energy and excellence to every project. During our hackathon, Afsana led the team with clarity and purpose, helping us secure runner-up among fierce competitors.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://cdn.lucidpic.com/cdn-cgi/image/w=600,format=auto,metadata=none/66e2e5fbe0cca.png" alt="Mentor, TechSaksham Program" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Mentor, TechSaksham Program</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Afsana's creativity and attention to detail are truly impressive. Her Health Assistant Chatbot was not only functional but also thoughtfully designed to help users intuitively.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-3DrMfPcWl5wPN2QQQeJqFKAbjkOGvLYL9btVFr5mInnQ7NFdVE_wrX4autLJ6zfSNU&usqp=CAU" alt="Supervisor, Edunet Foundation Internship" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Supervisor, Edunet Foundation Internship</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    An excellent communicator and natural problem-solver. Afsana was quick to adapt to our internship tasks and delivered insightful ideas that improved our API prototype.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="https://img.freepik.com/premium-photo/man-wearing-glasses-smiling-confidently_1022456-320593.jpg" alt="Faculty, iLEAD College" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Faculty, iLEAD College</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    What sets Afsana apart is her willingness to learn and lead. Whether it’s managing frontend design or presenting ideas with confidence, she’s always one step ahead.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Teammate, SIH Internal Hackathon 2024</h4>
+
+              <time datetime="2024-04-13">13 April, 2024</time>
+
+              <div data-modal-text>
+                <p>
+                  Afsana was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. 
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume" >
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ILEAD(Institute of Leadership, Entrepreneurship and Development)</h4>
+
+              <span>2024 — 2028</span>
+
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem neque laborum provident ipsam accusantium possimus vitae cupiditate velit doloremque quo nostrum sed excepturi, veniam eaque ipsum quas commodi quidem?
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Asian International School</h4>
+
+              <span>2022 — 2024</span>
+
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam commodi asperiores eos? Veritatis quam, laborum amet, assumenda modi dicta possimus autem ipsam quidem blanditiis quaerat at libero quia doloremque excepturi?
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Oxford High School</h4>
+
+              <span>2010 — 2022</span>
+
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam numquam maiores saepe alias. Tempore aperiam minima iste obcaecati suscipit illo totam consequuntur numquam, ab explicabo possimus itaque ipsam. Minus, autem.
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web development by Heal Bharat</h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni corporis optio nobis placeat id, vel et consequatur atque deserunt dolor illo? Sunt neque quas eos ex, unde deserunt fugit!
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Edunet Foundation transforming with Ai</h4>
+
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae omnis aut asperiores adipisci aspernatur, similique et quia id ipsa beatae cupiditate praesentium ducimus consectetur. Ipsum exercitationem officiis quod esse recusandae.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python development</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WordPress</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PROJECT
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">PROJECT</h2>
+        </header>
+      
+        <section class="projects">
+      
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>All</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+          </div>
+      
+          <ul class="project-list">
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  
+                  <img src="https://cloudinary.hbs.edu/hbsit/image/upload/s--wx5D2ABw--/f_auto,c_fill,h_375,w_750,/v20200101/5393409F6FB391494111C5EC16653C89.jpg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Finance</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://www.niti.gov.in/sites/default/files/2024-03/Security-banner_1250X493PX_1.jpg" alt="security" loading="lazy">
+                </figure>
+                <h3 class="project-title">security</h3>
+                <p class="project-category">Web development</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpeg" alt="AI" loading="lazy">
+                </figure>
+                <h3 class="project-title">Artificial Intelligence </h3>
+                <p class="project-category">Web design</p>
+              </a>
+            </li>
+      
+        </section>
+      
+      </article>
+      
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21697260455!2d88.26477967968063!3d22.535564848398458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1743931809569!5m2!1sen!2sin"
+             width="400" height="300" loading="lazy" ></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - FOOTER
+  -->
+    <footer class="footer" data-footer>
+      <div class="footer-content">
+        <p class="copyright"></p>
+        <p class="copyright">Copyright &copy; 2024 Afsana Ali Mullick. All rights reserved.</p>
+        <p class="copyright">Designed by Afsana Ali Mullick</p>
+      </div>
+    </footer>
+  <!--
+    - custom js link
+  -->
+  <script src="main_script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
